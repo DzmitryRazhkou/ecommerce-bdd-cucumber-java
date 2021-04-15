@@ -1,0 +1,173 @@
+{
+	"SALES": {
+		"Sales": [
+			"Orders",
+			"Invoices",
+			"Shipments",
+			"Credit Memos",
+			"Billing Agreements",
+			"Transactions",
+			"Braintree Virtual Terminal"
+		]
+	},
+	"CATALOG": {
+		"Catalog": [
+			"Products",
+			"Categories"
+		]
+	},
+	"CUSTOMERS": {
+		"Customers": [
+			"All Customers",
+			"Now Online",
+			"Login as Customer Log",
+			"Customer Groups"
+		]
+	},
+	"MARKETING": {
+		"Promotions": [
+			"Catalog Price Rule",
+			"Cart Price Rules"
+		],
+		"Communications": [
+			"Email Templates",
+			"Newsletter Templates",
+			"Newsletter Queue",
+			"Newsletter Subscribers"
+		],
+		"SEO & Search": [
+			"URL Rewrites",
+			"Search Terms",
+			"Search Synonyms",
+			"Site Map"
+		],
+		"User Content": [
+			"All Reviews",
+			"Pending Reviews",
+			"Yotpo Reviews"
+		],
+		"Customer Engagement": [
+			"dotdigital Engagement Cloud",
+			"dotdigital Chat",
+			"Exclusion Rules"
+		]
+	},
+	"CONTENT": {
+		"Elements": [
+			"Pages",
+			"Blocks",
+			"Widgets"
+		],
+		"Design": [
+			"Configuration",
+			"Themes",
+			"Schedule"
+		]
+	},
+	"REPORTS": {
+		"Marketing": [
+			"Products in Cart",
+			"Search Terms",
+			"Abandoned Carts",
+			"Newsletter Problem Reports"
+		],
+		"Reviews": [
+			"By Customers",
+			"By Products",
+			"Yotpo Reviews"
+		],
+		"Sales": [
+			"Orders",
+			"Tax",
+			"Invoiced",
+			"Shipping",
+			"Refunds",
+			"Coupons",
+			"PayPal Settlement",
+			"Braintree Settlement"
+		],
+		"Customers": [
+			"Order Total",
+			"Order Count",
+			"New"
+		],
+		"Products": [
+			"Views",
+			"Bestsellers",
+			"Low Stock",
+			"Ordered",
+			"Downloads"
+		],
+		"Statistics": [
+			"Refresh Statistics"
+		],
+		"Business Intelligence": [
+			"Advanced Reporting",
+			"BI Essentials",
+			"Yotpo Analytics"
+		],
+		"Customer Engagement": [
+			"Dashboard",
+			"Importer Status",
+			"Automation Enrollment",
+			"Campaign Sends",
+			"SMS Sends",
+			"Cron Tasks",
+			"Log Viewer",
+			"Abandoned Carts"
+		]
+	},
+	"STORES": {
+		"Settings": [
+			"All Stores",
+			"Configuration",
+			"Terms and Conditions",
+			"Order Status"
+		],
+		"Inventory": [
+			"Sources",
+			"Stocks"
+		],
+		"Taxes": [
+			"Tax Rules",
+			"Tax Zones and Rates"
+		],
+		"Currency": [
+			"Currency Rates",
+			"Currency Symbols"
+		],
+		"Attributes": [
+			"Product",
+			"Attribute Set",
+			"Rating"
+		]
+	},
+	"SYSTEM": {
+		"Data Transfer": [
+			"Import",
+			"Export",
+			"Import/Export Tax Rates",
+			"Import History"
+		],
+		"Extensions": [
+			"Integrations"
+		],
+		"Tools": [
+			"Cache Management",
+			"Index Management"
+		],
+		"Permissions": [
+			"All Users",
+			"Locked Users",
+			"User Roles"
+		],
+		"Action Logs": [
+			"Bulk Actions"
+		],
+		"Other Settings": [
+			"Notifications",
+			"Custom Variables",
+			"Manage Encryption Key"
+		]
+	}
+}
