@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="14" time="598.459">
+    <testcase classname="Affichage de la barre de menus de navigation" name="Vérifier l'affichage des menus de navigation" time="147.397">
+        <failure message="timeout: Timed out receiving message from renderer: 30.000&#10;  (Session info: MicrosoftEdge=89.0.774.68)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-Q95ADJE', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 89.0.774.68, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:58240}, msedge: {msedgedriverVersion: 88.0.705.63 (8c4f595b655cf8..., userDataDir: C:\Users\SB\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 82c3e50dc6bececf28227cc4afa7082b" type="org.openqa.selenium.TimeoutException"><![CDATA[Soit je suis connecté à l'application.......................................failed
+Alors les menus de navigation suivants doivent être affichés:...............skipped
+
+StackTrace:
+org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 30.000
+  (Session info: MicrosoftEdge=89.0.774.68)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-Q95ADJE', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 89.0.774.68, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:58240}, msedge: {msedgedriverVersion: 88.0.705.63 (8c4f595b655cf8..., userDataDir: C:\Users\SB\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 82c3e50dc6bececf28227cc4afa7082b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.app.base.BasePage.click(BasePage.java:38)
+	at com.app.pageObjects.SignInPage.signIn(SignInPage.java:40)
+	at com.app.stepDefinitions.CommonSteps.je_suis_connecté_à_l_application(CommonSteps.java:45)
+	at ✽.je suis connecté à l'application(file:///C:/Users/SB/eclipse-workspace/Cucumber-Java%20Magento/src/test/resources/com/app/features/NavigationMenubar.feature:8)
+]]></failure>
+    </testcase>
+    <testcase classname="Affichage de la barre de menus de navigation" name="Vérifier l'affichage des sous-menus de navigation" time="88.479">
+        <system-out><![CDATA[Soit je suis connecté à l'application.......................................passed
+Quand je clique sur le menu de navigation "SALES"...........................passed
+Alors ses sous-menus, compris dans le fichier "navSubmenus.json", doivent s'afficher sous le(s) titre(s) "Sales".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Affichage de la barre de menus de navigation" name="Vérifier l'affichage des sous-menus de navigation 2" time="55.946">
+        <system-out><![CDATA[Soit je suis connecté à l'application.......................................passed
+Quand je clique sur le menu de navigation "CATALOG".........................passed
+Alors ses sous-menus, compris dans le fichier "navSubmenus.json", doivent s'afficher sous le(s) titre(s) "Catalog".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Affichage de la barre de menus de navigation" name="Vérifier l'affichage des sous-menus de navigation 3" time="33.057">
+        <system-out><![CDATA[Soit je suis connecté à l'application.......................................passed
+Quand je clique sur le menu de navigation "CUSTOMERS".......................passed
+Alors ses sous-menus, compris dans le fichier "navSubmenus.json", doivent s'afficher sous le(s) titre(s) "Customers".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Affichage de la barre de menus de navigation" name="Vérifier l'affichage des sous-menus de navigation 4" time="31.011">
+        <system-out><![CDATA[Soit je suis connecté à l'application.......................................passed
+Quand je clique sur le menu de navigation "MARKETING".......................passed
+Alors ses sous-menus, compris dans le fichier "navSubmenus.json", doivent s'afficher sous le(s) titre(s) "Promotions, Communications, SEO & Search, User Content, Customer Engagement".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Affichage de la barre de menus de navigation" name="Vérifier l'affichage des sous-menus de navigation 5" time="26.986">
+        <system-out><![CDATA[Soit je suis connecté à l'application.......................................passed
+Quand je clique sur le menu de navigation "CONTENT".........................passed
+Alors ses sous-menus, compris dans le fichier "navSubmenus.json", doivent s'afficher sous le(s) titre(s) "Elements, Design".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Affichage de la barre de menus de navigation" name="Vérifier l'affichage des sous-menus de navigation 6" time="27.456">
+        <system-out><![CDATA[Soit je suis connecté à l'application.......................................passed
+Quand je clique sur le menu de navigation "REPORTS".........................passed
+Alors ses sous-menus, compris dans le fichier "navSubmenus.json", doivent s'afficher sous le(s) titre(s) "Marketing, Reviews, Sales, Customers, Products, Statistics, Business Intelligence, Customer Engagement".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Affichage de la barre de menus de navigation" name="Vérifier l'affichage des sous-menus de navigation 7" time="23.821">
+        <system-out><![CDATA[Soit je suis connecté à l'application.......................................passed
+Quand je clique sur le menu de navigation "STORES"..........................passed
+Alors ses sous-menus, compris dans le fichier "navSubmenus.json", doivent s'afficher sous le(s) titre(s) "Settings, Inventory, Taxes, Currency, Attributes".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Affichage de la barre de menus de navigation" name="Vérifier l'affichage des sous-menus de navigation 8" time="39.907">
+        <system-out><![CDATA[Soit je suis connecté à l'application.......................................passed
+Quand je clique sur le menu de navigation "SYSTEM"..........................passed
+Alors ses sous-menus, compris dans le fichier "navSubmenus.json", doivent s'afficher sous le(s) titre(s) "Data Transfer, Extensions, Tools, Permissions, Action Logs, Other Settings".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Connexion" name="Vérifier la connexion avec un nom d'utilisateur et un mot de passe valides" time="43.725">
+        <system-out><![CDATA[Soit un navigateur est ouvert...............................................passed
+Quand je me rend sur le site admin de l'application.........................passed
+Alors je suis sur la page de connexion......................................passed
+Quand je me connecte avec les identifiants suivants:........................passed
+Alors je suis sur la page du tableau de bord................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Connexion" name="Vérifier la connexion avec un nom d'utilisateur invalide et un mot de passe valide" time="9.152">
+        <system-out><![CDATA[Soit un navigateur est ouvert...............................................passed
+Quand je me rend sur le site admin de l'application.........................passed
+Alors je suis sur la page de connexion......................................passed
+Quand je me connecte avec le nom d'utilisateur "" et le mot de passe "bitnami1".passed
+Alors un message d'erreur concernant le nom d'utilisateur s'affiche.........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Connexion" name="Vérifier la connexion avec un nom d'utilisateur valide et un mot de passe invalide" time="8.435">
+        <system-out><![CDATA[Soit un navigateur est ouvert...............................................passed
+Quand je me rend sur le site admin de l'application.........................passed
+Alors je suis sur la page de connexion......................................passed
+Quand je me connecte avec le nom d'utilisateur "user" et le mot de passe "".passed
+Alors un message d'erreur concernant le mot de passe s'affiche..............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Connexion" name="Vérifier la connexion avec un nom d'utilisateur et un mot de passe invalides" time="13.817">
+        <failure message="" type="java.lang.AssertionError"><![CDATA[Soit un navigateur est ouvert...............................................passed
+Quand je me rend sur le site admin de l'application.........................passed
+Alors je suis sur la page de connexion......................................passed
+Quand je me connecte avec le nom d'utilisateur "" et le mot de passe "".....passed
+Alors un message d'erreur concernant le nom d'utilisateur s'affiche.........failed
+Et un message d'erreur concernant le mot de passe s'affiche.................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.app.stepDefinitions.SignInSteps.un_message_d_erreur_concernant_le_nom_d_utilisateur_s_affiche(SignInSteps.java:50)
+	at ✽.un message d'erreur concernant le nom d'utilisateur s'affiche(file:///C:/Users/SB/eclipse-workspace/Cucumber-Java%20Magento/src/test/resources/com/app/features/SignIn.feature:42)
+]]></failure>
+    </testcase>
+    <testcase classname="Déconnexion" name="Vérifier la déconnexion" time="47.872">
+        <system-out><![CDATA[Soit je suis connecté à l'application.......................................passed
+Quand je me déconnecte de l'application.....................................passed
+Alors je suis sur la page de connexion......................................passed
+Et un message confirmant la déconnexion est affiché.........................passed
+]]></system-out>
+    </testcase>
+</testsuite>

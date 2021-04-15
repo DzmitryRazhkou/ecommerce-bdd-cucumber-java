@@ -1,0 +1,1602 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Rapport Magento</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c43b89d03a7c43dae8bb8f0f078bad1997af6b3b/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Tests de Fumée</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Apr. 7, 2021 11:49:51 a.m.</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Apr. 7, 2021 11:49:51 a.m.</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Apr. 7, 2021 11:59:53 a.m.</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>2</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='33%'>
+<b>1</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='66%'><b>2</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='85%'><b>12</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='14%'><b>2</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='92%'><b>49</b> steps passed</small></div>
+<div>
+<small data-tooltip='3%'><b>2</b> steps failed,
+<b>2</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Affichage de la barre de menus de navigation":473.932,"Connexion":75.051,"Déconnexion":47.864
+};
+</script>
+<div class="row">
+<div class="col-md-4 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@Connexion</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>75%</td>
+</tr>
+<tr>
+<td>@Déconnexion</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Navigation</td>
+<td>8</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>88.889%</td>
+</tr>
+<tr>
+<td>@Nominal</td>
+<td>10</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>90.909%</td>
+</tr>
+<tr>
+<td>@Fumée</td>
+<td>12</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>85.714%</td>
+</tr>
+<tr>
+<td>@Exception</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>66.667%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-md-4 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>ARCHITECTURE</td>
+<td>64 bit</td>
+</tr>
+<tr>
+<td>RAM</td>
+<td>12GB</td>
+</tr>
+<tr>
+<td>AUT</td>
+<td>Magento</td>
+</tr>
+<tr>
+<td>TOOL</td>
+<td>Selenium 3.141.59</td>
+</tr>
+<tr>
+<td>FRAMEWORK</td>
+<td>JUnit 4</td>
+</tr>
+<tr>
+<td>BUILD</td>
+<td>1.1</td>
+</tr>
+<tr>
+<td>CPU</td>
+<td>i5 gen 3</td>
+</tr>
+<tr>
+<td>BDD</td>
+<td>Cucumber</td>
+</tr>
+<tr>
+<td>LANGUAGE</td>
+<td>Java 8</td>
+</tr>
+<tr>
+<td>AUTHOR</td>
+<td>mk-sdet</td>
+</tr>
+<tr>
+<td>IDE</td>
+<td>Eclipse 2020-12 (4.18.0)</td>
+</tr>
+<tr>
+<td>OS</td>
+<td>Windows 10 20H2 English</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 2,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 12,
+failChild: 2,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 49,
+failGrandChild: 2,
+warningGrandChild: 0,
+skipGrandChild: 2,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@Connexion</a><a class="dropdown-item" href="#">@Déconnexion</a><a class="dropdown-item" href="#">@Navigation</a><a class="dropdown-item" href="#">@Nominal</a><a class="dropdown-item" href="#">@Fumée</a><a class="dropdown-item" href="#">@Exception</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Affichage de la barre de menus de navigation</p>
+            <p class="text-sm">
+              <span>11:49:54 a.m.</span> / <span>00:07:53:932</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Affichage de la barre de menus de navigation</h5>
+<span class='badge badge-success'>04.07.2021 11:49:54</span>
+<span class='badge badge-danger'>04.07.2021 11:57:48</span>
+<span class='badge badge-default'>00:07:53:932</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+</div>
+<div class="m-t-10 m-l-5"> En tant qu'administrateur, je désire pouvoir me retrouver à travers les menus
+ainsi que leurs sous-menus dans la barre de navigation pour mieux gérer mes sites web.</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Vérifier l'affichage des menus de navigation</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="com.app.stepDefinitions.CommonSteps.je_suis_connecté_à_l_application()">
+                <span>Soit je suis connecté à l'application</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 30.000
+  (Session info: MicrosoftEdge=89.0.774.68)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-Q95ADJE', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 89.0.774.68, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:58240}, msedge: {msedgedriverVersion: 88.0.705.63 (8c4f595b655cf8..., userDataDir: C:\Users\SB\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 82c3e50dc6bececf28227cc4afa7082b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.app.base.BasePage.click(BasePage.java:38)
+	at com.app.pageObjects.SignInPage.signIn(SignInPage.java:40)
+	at com.app.stepDefinitions.CommonSteps.je_suis_connecté_à_l_application(CommonSteps.java:45)
+	at ?.je suis connecté à l'application(file:///C:/Users/SB/eclipse-workspace/Cucumber-Java%20Magento/src/test/resources/com/app/features/NavigationMenubar.feature:8)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.app.stepDefinitions.NavigationMenubarSteps.les_menus_de_navigation_suivants_doivent_être_affichés(io.cucumber.datatable.DataTable)">
+                <span>Alors les menus de navigation suivants doivent être affichés:</span>
+      <div><table class='markup-table table '><tr><td>DASHBOARD</td></tr><tr><td>SALES</td></tr><tr><td>CATALOG</td></tr><tr><td>CUSTOMERS</td></tr><tr><td>MARKETING</td></tr><tr><td>CONTENT</td></tr><tr><td>REPORTS</td></tr><tr><td>STORES</td></tr><tr><td>SYSTEM</td></tr><tr><td>FIND PARTNERS & EXTENSIONS</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.app.hooks.ReportHook.afterScenario_Screenshot(io.cucumber.java.Scenario)</span>
+      <div>Vérifier_l'affichage_des_menus_de_navigation
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../screenshots/embedded1.png' src="../screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>Vérifier l'affichage des sous-menus de navigation</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.app.stepDefinitions.CommonSteps.je_suis_connecté_à_l_application()">
+                <span>Soit je suis connecté à l'application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.NavigationMenubarSteps.je_clique_sur_le_menu_de_navigation(java.lang.String)">
+                <span>Quand je clique sur le menu de navigation "SALES"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.NavigationMenubarSteps.ses_sous_menus_compris_dans_le_fichier_doivent_s_afficher_sous_le_s_titre_s(java.lang.String,java.lang.String)">
+                <span>Alors ses sous-menus, compris dans le fichier "navSubmenus.json", doivent s'afficher sous le(s) titre(s) "Sales"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>Vérifier l'affichage des sous-menus de navigation</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.app.stepDefinitions.CommonSteps.je_suis_connecté_à_l_application()">
+                <span>Soit je suis connecté à l'application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.NavigationMenubarSteps.je_clique_sur_le_menu_de_navigation(java.lang.String)">
+                <span>Quand je clique sur le menu de navigation "CATALOG"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.NavigationMenubarSteps.ses_sous_menus_compris_dans_le_fichier_doivent_s_afficher_sous_le_s_titre_s(java.lang.String,java.lang.String)">
+                <span>Alors ses sous-menus, compris dans le fichier "navSubmenus.json", doivent s'afficher sous le(s) titre(s) "Catalog"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="22"><span class="badge log pass-bg mr-2">Pass</span>Vérifier l'affichage des sous-menus de navigation</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.app.stepDefinitions.CommonSteps.je_suis_connecté_à_l_application()">
+                <span>Soit je suis connecté à l'application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.NavigationMenubarSteps.je_clique_sur_le_menu_de_navigation(java.lang.String)">
+                <span>Quand je clique sur le menu de navigation "CUSTOMERS"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.NavigationMenubarSteps.ses_sous_menus_compris_dans_le_fichier_doivent_s_afficher_sous_le_s_titre_s(java.lang.String,java.lang.String)">
+                <span>Alors ses sous-menus, compris dans le fichier "navSubmenus.json", doivent s'afficher sous le(s) titre(s) "Customers"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="29"><span class="badge log pass-bg mr-2">Pass</span>Vérifier l'affichage des sous-menus de navigation</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.app.stepDefinitions.CommonSteps.je_suis_connecté_à_l_application()">
+                <span>Soit je suis connecté à l'application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.NavigationMenubarSteps.je_clique_sur_le_menu_de_navigation(java.lang.String)">
+                <span>Quand je clique sur le menu de navigation "MARKETING"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.NavigationMenubarSteps.ses_sous_menus_compris_dans_le_fichier_doivent_s_afficher_sous_le_s_titre_s(java.lang.String,java.lang.String)">
+                <span>Alors ses sous-menus, compris dans le fichier "navSubmenus.json", doivent s'afficher sous le(s) titre(s) "Promotions, Communications, SEO & Search, User Content, Customer Engagement"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="36"><span class="badge log pass-bg mr-2">Pass</span>Vérifier l'affichage des sous-menus de navigation</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.app.stepDefinitions.CommonSteps.je_suis_connecté_à_l_application()">
+                <span>Soit je suis connecté à l'application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.NavigationMenubarSteps.je_clique_sur_le_menu_de_navigation(java.lang.String)">
+                <span>Quand je clique sur le menu de navigation "CONTENT"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.NavigationMenubarSteps.ses_sous_menus_compris_dans_le_fichier_doivent_s_afficher_sous_le_s_titre_s(java.lang.String,java.lang.String)">
+                <span>Alors ses sous-menus, compris dans le fichier "navSubmenus.json", doivent s'afficher sous le(s) titre(s) "Elements, Design"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="43"><span class="badge log pass-bg mr-2">Pass</span>Vérifier l'affichage des sous-menus de navigation</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.app.stepDefinitions.CommonSteps.je_suis_connecté_à_l_application()">
+                <span>Soit je suis connecté à l'application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.NavigationMenubarSteps.je_clique_sur_le_menu_de_navigation(java.lang.String)">
+                <span>Quand je clique sur le menu de navigation "REPORTS"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.NavigationMenubarSteps.ses_sous_menus_compris_dans_le_fichier_doivent_s_afficher_sous_le_s_titre_s(java.lang.String,java.lang.String)">
+                <span>Alors ses sous-menus, compris dans le fichier "navSubmenus.json", doivent s'afficher sous le(s) titre(s) "Marketing, Reviews, Sales, Customers, Products, Statistics, Business Intelligence, Customer Engagement"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="50"><span class="badge log pass-bg mr-2">Pass</span>Vérifier l'affichage des sous-menus de navigation</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.app.stepDefinitions.CommonSteps.je_suis_connecté_à_l_application()">
+                <span>Soit je suis connecté à l'application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.NavigationMenubarSteps.je_clique_sur_le_menu_de_navigation(java.lang.String)">
+                <span>Quand je clique sur le menu de navigation "STORES"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.NavigationMenubarSteps.ses_sous_menus_compris_dans_le_fichier_doivent_s_afficher_sous_le_s_titre_s(java.lang.String,java.lang.String)">
+                <span>Alors ses sous-menus, compris dans le fichier "navSubmenus.json", doivent s'afficher sous le(s) titre(s) "Settings, Inventory, Taxes, Currency, Attributes"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="57"><span class="badge log pass-bg mr-2">Pass</span>Vérifier l'affichage des sous-menus de navigation</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.app.stepDefinitions.CommonSteps.je_suis_connecté_à_l_application()">
+                <span>Soit je suis connecté à l'application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.NavigationMenubarSteps.je_clique_sur_le_menu_de_navigation(java.lang.String)">
+                <span>Quand je clique sur le menu de navigation "SYSTEM"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.NavigationMenubarSteps.ses_sous_menus_compris_dans_le_fichier_doivent_s_afficher_sous_le_s_titre_s(java.lang.String,java.lang.String)">
+                <span>Alors ses sous-menus, compris dans le fichier "navSubmenus.json", doivent s'afficher sous le(s) titre(s) "Data Transfer, Extensions, Tools, Permissions, Action Logs, Other Settings"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="64"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Connexion</p>
+            <p class="text-sm">
+              <span>11:57:48 a.m.</span> / <span>00:01:15:051</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Connexion</h5>
+<span class='badge badge-success'>04.07.2021 11:57:48</span>
+<span class='badge badge-danger'>04.07.2021 11:59:03</span>
+<span class='badge badge-default'>00:01:15:051</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=64</span>
+</div>
+<div class="m-t-10 m-l-5"> En tant qu'administrateur, je désire pouvoir me connecter à l'application.</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="65"><span class="badge log pass-bg mr-2">Pass</span>Vérifier la connexion avec un nom d'utilisateur et un mot de passe valides</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.app.stepDefinitions.SignInSteps.un_navigateur_est_ouvert()">
+                <span>Soit un navigateur est ouvert</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.SignInSteps.je_me_rend_sur_le_site_admin_de_l_application()">
+                <span>Quand je me rend sur le site admin de l'application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.CommonSteps.je_suis_sur_la_page_de_connexion()">
+                <span>Alors je suis sur la page de connexion</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.SignInSteps.je_me_connecte_avec_mes_identifiants(io.cucumber.datatable.DataTable)">
+                <span>Quand je me connecte avec les identifiants suivants:</span>
+      <div><table class='markup-table table '><tr><td>nom_utilisateur</td><td>mot_de_passe</td></tr><tr><td>user</td><td>bitnami1</td></tr></table>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.CommonSteps.je_suis_sur_la_page_du_tableau_de_bord()">
+                <span>Alors je suis sur la page du tableau de bord</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="73"><span class="badge log pass-bg mr-2">Pass</span>Vérifier la connexion avec un nom d'utilisateur invalide et un mot de passe valide</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.app.stepDefinitions.SignInSteps.un_navigateur_est_ouvert()">
+                <span>Soit un navigateur est ouvert</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.SignInSteps.je_me_rend_sur_le_site_admin_de_l_application()">
+                <span>Quand je me rend sur le site admin de l'application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.CommonSteps.je_suis_sur_la_page_de_connexion()">
+                <span>Alors je suis sur la page de connexion</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.SignInSteps.je_me_connecte_avec_le_nom_d_utilisateur_et_le_mot_de_passe(java.lang.String,java.lang.String)">
+                <span>Quand je me connecte avec le nom d'utilisateur "" et le mot de passe "bitnami1"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.SignInSteps.un_message_d_erreur_concernant_le_nom_d_utilisateur_s_affiche()">
+                <span>Alors un message d'erreur concernant le nom d'utilisateur s'affiche</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="81"><span class="badge log pass-bg mr-2">Pass</span>Vérifier la connexion avec un nom d'utilisateur valide et un mot de passe invalide</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.app.stepDefinitions.SignInSteps.un_navigateur_est_ouvert()">
+                <span>Soit un navigateur est ouvert</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.SignInSteps.je_me_rend_sur_le_site_admin_de_l_application()">
+                <span>Quand je me rend sur le site admin de l'application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.CommonSteps.je_suis_sur_la_page_de_connexion()">
+                <span>Alors je suis sur la page de connexion</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.SignInSteps.je_me_connecte_avec_le_nom_d_utilisateur_et_le_mot_de_passe(java.lang.String,java.lang.String)">
+                <span>Quand je me connecte avec le nom d'utilisateur "user" et le mot de passe ""</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.SignInSteps.un_message_d_erreur_concernant_le_mot_de_passe_s_affiche()">
+                <span>Alors un message d'erreur concernant le mot de passe s'affiche</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="89"><span class="badge log fail-bg mr-2">Fail</span>Vérifier la connexion avec un nom d'utilisateur et un mot de passe invalides</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.app.stepDefinitions.SignInSteps.un_navigateur_est_ouvert()">
+                <span>Soit un navigateur est ouvert</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.SignInSteps.je_me_rend_sur_le_site_admin_de_l_application()">
+                <span>Quand je me rend sur le site admin de l'application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.CommonSteps.je_suis_sur_la_page_de_connexion()">
+                <span>Alors je suis sur la page de connexion</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.SignInSteps.je_me_connecte_avec_le_nom_d_utilisateur_et_le_mot_de_passe(java.lang.String,java.lang.String)">
+                <span>Quand je me connecte avec le nom d'utilisateur "" et le mot de passe ""</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.app.stepDefinitions.SignInSteps.un_message_d_erreur_concernant_le_nom_d_utilisateur_s_affiche()">
+                <span>Alors un message d'erreur concernant le nom d'utilisateur s'affiche</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.app.stepDefinitions.SignInSteps.un_message_d_erreur_concernant_le_nom_d_utilisateur_s_affiche(SignInSteps.java:50)
+	at ?.un message d'erreur concernant le nom d'utilisateur s'affiche(file:///C:/Users/SB/eclipse-workspace/Cucumber-Java%20Magento/src/test/resources/com/app/features/SignIn.feature:42)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="com.app.stepDefinitions.SignInSteps.un_message_d_erreur_concernant_le_mot_de_passe_s_affiche()">
+                <span>Et un message d'erreur concernant le mot de passe s'affiche</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.app.hooks.ReportHook.afterScenario_Screenshot(io.cucumber.java.Scenario)</span>
+      <div>Vérifier_la_connexion_avec_un_nom_d'utilisateur_et_un_mot_de_passe_invalides
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../screenshots/embedded2.png' src="../screenshots/embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="98"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Déconnexion</p>
+            <p class="text-sm">
+              <span>11:59:03 a.m.</span> / <span>00:00:47:864</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Déconnexion</h5>
+<span class='badge badge-success'>04.07.2021 11:59:03</span>
+<span class='badge badge-danger'>04.07.2021 11:59:51</span>
+<span class='badge badge-default'>00:00:47:864</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=98</span>
+</div>
+<div class="m-t-10 m-l-5"> En tant qu'administrateur, je désire pouvoir me déconnecter de l'application.</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="99"><span class="badge log pass-bg mr-2">Pass</span>Vérifier la déconnexion</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.app.stepDefinitions.CommonSteps.je_suis_connecté_à_l_application()">
+                <span>Soit je suis connecté à l'application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.SignOutSteps.je_me_déconnecte_de_l_application()">
+                <span>Quand je me déconnecte de l'application</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.CommonSteps.je_suis_sur_la_page_de_connexion()">
+                <span>Alors je suis sur la page de connexion</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.app.stepDefinitions.SignOutSteps.un_message_confirmant_la_déconnexion_est_affiché()">
+                <span>Et un message confirmant la déconnexion est affiché</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">6</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Connexion</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Connexion</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:57:48 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='64' id='65'>Vérifier la connexion avec un nom d'utilisateur et un mot de passe valides</a>
+<div class="">
+<span class="badge badge-default">Connexion.Vérifier la connexion avec un nom d'utilisateur et un mot de passe valides</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:58:32 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='64' id='73'>Vérifier la connexion avec un nom d'utilisateur invalide et un mot de passe valide</a>
+<div class="">
+<span class="badge badge-default">Connexion.Vérifier la connexion avec un nom d'utilisateur invalide et un mot de passe valide</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:58:41 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='64' id='81'>Vérifier la connexion avec un nom d'utilisateur valide et un mot de passe invalide</a>
+<div class="">
+<span class="badge badge-default">Connexion.Vérifier la connexion avec un nom d'utilisateur valide et un mot de passe invalide</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:58:49 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='64' id='89'>Vérifier la connexion avec un nom d'utilisateur et un mot de passe invalides</a>
+<div class="">
+<span class="badge badge-default">Connexion.Vérifier la connexion avec un nom d'utilisateur et un mot de passe invalides</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Déconnexion</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Déconnexion</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:59:03 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='98' id='99'>Vérifier la déconnexion</a>
+<div class="">
+<span class="badge badge-default">Déconnexion.Vérifier la déconnexion</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>8</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Navigation</p>
+<p class="duration text-sm">9 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Navigation</h4>
+<span status="pass" class='badge log pass-bg'>8 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:49:54 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Vérifier l'affichage des menus de navigation</a>
+<div class="">
+<span class="badge badge-default">Affichage de la barre de menus de navigation.Vérifier l'affichage des menus de navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:52:21 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>Vérifier l'affichage des sous-menus de navigation</a>
+<div class="">
+<span class="badge badge-default">Affichage de la barre de menus de navigation.Vérifier l'affichage des sous-menus de navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:53:49 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='15'>Vérifier l'affichage des sous-menus de navigation</a>
+<div class="">
+<span class="badge badge-default">Affichage de la barre de menus de navigation.Vérifier l'affichage des sous-menus de navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:54:45 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='22'>Vérifier l'affichage des sous-menus de navigation</a>
+<div class="">
+<span class="badge badge-default">Affichage de la barre de menus de navigation.Vérifier l'affichage des sous-menus de navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:55:18 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='29'>Vérifier l'affichage des sous-menus de navigation</a>
+<div class="">
+<span class="badge badge-default">Affichage de la barre de menus de navigation.Vérifier l'affichage des sous-menus de navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:55:49 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='36'>Vérifier l'affichage des sous-menus de navigation</a>
+<div class="">
+<span class="badge badge-default">Affichage de la barre de menus de navigation.Vérifier l'affichage des sous-menus de navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:56:16 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='43'>Vérifier l'affichage des sous-menus de navigation</a>
+<div class="">
+<span class="badge badge-default">Affichage de la barre de menus de navigation.Vérifier l'affichage des sous-menus de navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:56:44 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='50'>Vérifier l'affichage des sous-menus de navigation</a>
+<div class="">
+<span class="badge badge-default">Affichage de la barre de menus de navigation.Vérifier l'affichage des sous-menus de navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:57:08 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='57'>Vérifier l'affichage des sous-menus de navigation</a>
+<div class="">
+<span class="badge badge-default">Affichage de la barre de menus de navigation.Vérifier l'affichage des sous-menus de navigation</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>10</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Nominal</p>
+<p class="duration text-sm">11 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Nominal</h4>
+<span status="pass" class='badge log pass-bg'>10 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:49:54 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Vérifier l'affichage des menus de navigation</a>
+<div class="">
+<span class="badge badge-default">Affichage de la barre de menus de navigation.Vérifier l'affichage des menus de navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:52:21 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>Vérifier l'affichage des sous-menus de navigation</a>
+<div class="">
+<span class="badge badge-default">Affichage de la barre de menus de navigation.Vérifier l'affichage des sous-menus de navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:53:49 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='15'>Vérifier l'affichage des sous-menus de navigation</a>
+<div class="">
+<span class="badge badge-default">Affichage de la barre de menus de navigation.Vérifier l'affichage des sous-menus de navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:54:45 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='22'>Vérifier l'affichage des sous-menus de navigation</a>
+<div class="">
+<span class="badge badge-default">Affichage de la barre de menus de navigation.Vérifier l'affichage des sous-menus de navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:55:18 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='29'>Vérifier l'affichage des sous-menus de navigation</a>
+<div class="">
+<span class="badge badge-default">Affichage de la barre de menus de navigation.Vérifier l'affichage des sous-menus de navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:55:49 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='36'>Vérifier l'affichage des sous-menus de navigation</a>
+<div class="">
+<span class="badge badge-default">Affichage de la barre de menus de navigation.Vérifier l'affichage des sous-menus de navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:56:16 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='43'>Vérifier l'affichage des sous-menus de navigation</a>
+<div class="">
+<span class="badge badge-default">Affichage de la barre de menus de navigation.Vérifier l'affichage des sous-menus de navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:56:44 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='50'>Vérifier l'affichage des sous-menus de navigation</a>
+<div class="">
+<span class="badge badge-default">Affichage de la barre de menus de navigation.Vérifier l'affichage des sous-menus de navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:57:08 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='57'>Vérifier l'affichage des sous-menus de navigation</a>
+<div class="">
+<span class="badge badge-default">Affichage de la barre de menus de navigation.Vérifier l'affichage des sous-menus de navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:57:48 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='64' id='65'>Vérifier la connexion avec un nom d'utilisateur et un mot de passe valides</a>
+<div class="">
+<span class="badge badge-default">Connexion.Vérifier la connexion avec un nom d'utilisateur et un mot de passe valides</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:59:03 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='98' id='99'>Vérifier la déconnexion</a>
+<div class="">
+<span class="badge badge-default">Déconnexion.Vérifier la déconnexion</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>12</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@Fumée</p>
+<p class="duration text-sm">14 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Fumée</h4>
+<span status="pass" class='badge log pass-bg'>12 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:49:54 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Vérifier l'affichage des menus de navigation</a>
+<div class="">
+<span class="badge badge-default">Affichage de la barre de menus de navigation.Vérifier l'affichage des menus de navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:52:21 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>Vérifier l'affichage des sous-menus de navigation</a>
+<div class="">
+<span class="badge badge-default">Affichage de la barre de menus de navigation.Vérifier l'affichage des sous-menus de navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:53:49 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='15'>Vérifier l'affichage des sous-menus de navigation</a>
+<div class="">
+<span class="badge badge-default">Affichage de la barre de menus de navigation.Vérifier l'affichage des sous-menus de navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:54:45 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='22'>Vérifier l'affichage des sous-menus de navigation</a>
+<div class="">
+<span class="badge badge-default">Affichage de la barre de menus de navigation.Vérifier l'affichage des sous-menus de navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:55:18 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='29'>Vérifier l'affichage des sous-menus de navigation</a>
+<div class="">
+<span class="badge badge-default">Affichage de la barre de menus de navigation.Vérifier l'affichage des sous-menus de navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:55:49 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='36'>Vérifier l'affichage des sous-menus de navigation</a>
+<div class="">
+<span class="badge badge-default">Affichage de la barre de menus de navigation.Vérifier l'affichage des sous-menus de navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:56:16 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='43'>Vérifier l'affichage des sous-menus de navigation</a>
+<div class="">
+<span class="badge badge-default">Affichage de la barre de menus de navigation.Vérifier l'affichage des sous-menus de navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:56:44 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='50'>Vérifier l'affichage des sous-menus de navigation</a>
+<div class="">
+<span class="badge badge-default">Affichage de la barre de menus de navigation.Vérifier l'affichage des sous-menus de navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:57:08 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='57'>Vérifier l'affichage des sous-menus de navigation</a>
+<div class="">
+<span class="badge badge-default">Affichage de la barre de menus de navigation.Vérifier l'affichage des sous-menus de navigation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:57:48 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='64' id='65'>Vérifier la connexion avec un nom d'utilisateur et un mot de passe valides</a>
+<div class="">
+<span class="badge badge-default">Connexion.Vérifier la connexion avec un nom d'utilisateur et un mot de passe valides</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:58:32 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='64' id='73'>Vérifier la connexion avec un nom d'utilisateur invalide et un mot de passe valide</a>
+<div class="">
+<span class="badge badge-default">Connexion.Vérifier la connexion avec un nom d'utilisateur invalide et un mot de passe valide</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:58:41 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='64' id='81'>Vérifier la connexion avec un nom d'utilisateur valide et un mot de passe invalide</a>
+<div class="">
+<span class="badge badge-default">Connexion.Vérifier la connexion avec un nom d'utilisateur valide et un mot de passe invalide</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:58:49 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='64' id='89'>Vérifier la connexion avec un nom d'utilisateur et un mot de passe invalides</a>
+<div class="">
+<span class="badge badge-default">Connexion.Vérifier la connexion avec un nom d'utilisateur et un mot de passe invalides</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:59:03 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='98' id='99'>Vérifier la déconnexion</a>
+<div class="">
+<span class="badge badge-default">Déconnexion.Vérifier la déconnexion</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Exception</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Exception</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:58:32 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='64' id='73'>Vérifier la connexion avec un nom d'utilisateur invalide et un mot de passe valide</a>
+<div class="">
+<span class="badge badge-default">Connexion.Vérifier la connexion avec un nom d'utilisateur invalide et un mot de passe valide</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:58:41 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='64' id='81'>Vérifier la connexion avec un nom d'utilisateur valide et un mot de passe invalide</a>
+<div class="">
+<span class="badge badge-default">Connexion.Vérifier la connexion avec un nom d'utilisateur valide et un mot de passe invalide</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:58:49 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='64' id='89'>Vérifier la connexion avec un nom d'utilisateur et un mot de passe invalides</a>
+<div class="">
+<span class="badge badge-default">Connexion.Vérifier la connexion avec un nom d'utilisateur et un mot de passe invalides</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:58:58 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='64' id='94'>Alors un message d'erreur concernant le nom d'utilisateur s'affiche</a>
+<div class="">
+<span class="badge badge-default">Connexion.Vérifier la connexion avec un nom d'utilisateur et un mot de passe invalides.Alors un message d'erreur concernant le nom d'utilisateur s'affiche</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.TimeoutException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.TimeoutException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:51:22 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='4'>Soit je suis connecté à l'application</a>
+<div class="">
+<span class="badge badge-default">Affichage de la barre de menus de navigation.Vérifier l'affichage des menus de navigation.Soit je suis connecté à l'application</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@14e9bb345ef7e2ed3a102f271d84e9f0267c88e7/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
