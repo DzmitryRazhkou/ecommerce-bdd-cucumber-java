@@ -115,4 +115,4 @@ Enfin, vous trouverez les rapports de ExtentReports et de Cucumber dans le dossi
 
 ## Contact
 
-Created by [Muana Kimba](https://www.linkedin.com/in/mkimba)
+Réalisé par [Muana Kimba](https://www.linkedin.com/in/mkimba)
